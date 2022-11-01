@@ -10,13 +10,13 @@
 **Wordle helper algorithm which takes the following parameters into consideration when narrowing down possible words:**
 - Greens - letters that appear in the desired word and are in the correct position.
   
-       'for(int x = 0; x < tempGreen.length(); x++){ //green filter
-            String green = tempGreen.substring(x, x + 1);
-            int pos = greens.indexOf(green);
+       'for(int x = 0; x < tempGreen.length(); x++){ //green filter'
+           'String green = tempGreen.substring(x, x + 1);'
+           'int pos = greens.indexOf(green);'
 
-            output.removeIf(n -> (!(n.contains(green)))); //removes if word does not contain a green letter
-            output.removeIf(n -> (n.indexOf(green)) != pos); //removes if green is in incorrect position
-        }'  
+           'output.removeIf(n -> (!(n.contains(green)))); //removes if word does not contain a green letter'
+           'output.removeIf(n -> (n.indexOf(green)) != pos); //removes if green is in incorrect position'
+       '}'  
 
 
 - Golds - letters that appear in the desired word but are in the incorrect position.
