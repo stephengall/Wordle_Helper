@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-import javafx.*;
 
 public class wordleHelper{
     public static void main(String []args){
